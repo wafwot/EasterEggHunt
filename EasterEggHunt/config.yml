@@ -1,0 +1,74 @@
+#
+# just read the quick and dirty comments for each entry
+#
+# StartCount how many eggs to drop right away when you do /egghunt start
+StartCount: 6
+#
+# MoreToDrop how many more eggs to drop after it started
+MoreToDrop: 60
+#
+# InterDelay is how long between egg drops...in seconds, 1 is lowest
+InterDelay: 1
+#
+# DespawnTime - how long to wait for everything to be found, this should
+#     not be sent longer than your despawn time (5 minutes is default)
+DespawnTime: 120
+#
+# BroadcastFinds - when someone finds something, broadcast it?
+BroadcastFinds: true
+#
+# IndividualFinds - when someone finds something, send just then a msg?
+IndividualFinds: false
+#
+# StartMessage - the message to broadcast at start, color codes work
+StartMessage: 'An Easter Egg hunt has begun'
+#
+# LastDropMessage - message to broadcast whent he last egg is dropped
+LastDropMessage: 'The last Easter Egg has been hidden'
+#
+# GameOverMessage - message to broadcast when the game is over
+#   this is just 'DespawnTime' after the last egg is dropped
+GameOverMessage: 'The Easter Egg hunt is complete, hope you had fun'
+#
+# The world the game will be run in
+WorldName: dead
+#
+# Corners for the drop....just X and Z coords corners
+Corner1x: -1723
+Corner1z: -155
+Corner2x: -1575
+Corner2z: 25
+#
+# this is 'drop level for the eggs' ... I use 16 blocks above my
+#    spawn height which is where the easter egg hunt will take place
+DropYLevel: 92
+#
+# These are the prizes...there are no odds, other than randomness
+# list as many as you want, each egg will just be randomly assigned one
+# of these. There are 2 parts per "prize" the text that is said when
+# something is found and a command run. The command can do /give or
+# whatever. If you use my scavenger hunt then you know how this works.
+# I think everything i use is /give and /kit. {player} is replaced with
+# the playername.
+#
+prizes:
+  dirt:
+    msg: 'a piece of dirt'
+    cmd: 'give {pname} dirt 1'
+  cobble:
+    msg: 'a piece of cobble'
+    cmd: 'give {pname} cobble 1'
+  stone:
+    msg: 'a carrot'
+    cmd: 'give {pname} carrot_item 1'
+  levels:
+    msg: 'some xp'
+    cmd: 'xp 25 {pname}'
+  diamond:
+    msg: 'a diamond'
+    cmd: 'give {pname} diamond 1'
+  toolset:
+    msg: 'a set of tools'
+    cmd: 'kit tools {pname}'
+ 
+

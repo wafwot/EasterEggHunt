@@ -43,7 +43,6 @@ public class EasterEgg {
 				
 				msg = ConfMan.getPrizeCmd(ee.pzNum).replace("{pname}",  p.getName() );
 				Bukkit.dispatchCommand( Bukkit.getConsoleSender(), msg );
-				Bukkit.broadcastMessage("<" + msg + ">");
 				// since we just remove it then leave the loop, concurrent modification won't happen
 				eggList.remove(ee);
 				return(true);

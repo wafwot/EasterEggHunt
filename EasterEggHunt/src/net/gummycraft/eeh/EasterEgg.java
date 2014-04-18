@@ -84,6 +84,8 @@ public class EasterEgg {
 	World world = Bukkit.getWorlds().get(0);
 	private Location getDropLoc() {
 		
+		// the watchDog is just to "help" people when they mess up defining a rectangle.
+		// it will return NPE, and that's fine. At least it doesn't halt the minecraft main thread, right?
 		int watchDog = 0;
 		do {
 			int randomX = (int) ( (Math.random() * ConfMan.spanX) + ConfMan.lowX);

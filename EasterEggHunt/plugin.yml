@@ -1,6 +1,6 @@
 name: EasterEggHunt
 main: net.gummycraft.eeh.EggHunt
-version: 0.0.1
+version: 0.0.2
 commands:
   egghunt:
     description: Egg commands

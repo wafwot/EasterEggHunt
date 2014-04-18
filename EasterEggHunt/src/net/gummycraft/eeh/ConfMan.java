@@ -86,9 +86,9 @@ public class ConfMan {
 		int z1 = cnf.getInt("Corner1z");
 		int z2 = cnf.getInt("Corner2z");
 		lowX = Math.min(x1,  x2);
-		spanX = Math.max(x2, x2) - lowX;
+		spanX = Math.max(x1, x2) - lowX;  
 		lowZ = Math.min(z1,  z2);
-		spanZ = Math.max(z2, z2) - lowZ;
+		spanZ = Math.max(z1, z2) - lowZ;  
 		setY = cnf.getInt("DropYLevel", 100);
 		
 		// read in all the prizes
